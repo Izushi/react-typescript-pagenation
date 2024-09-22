@@ -1,8 +1,18 @@
 // Removed the unused import statement
+import AlbumList from "./AlbumList";
 import "./Pagenation.css";
 
-const Pagenation = () => {
-  return <div>Pagenation</div>;
+type Props = {
+  albums: Album[];
+}
+
+const Pagenation = (props: Props) => {
+  const { albums } = props;
+  return (
+    <div>
+      <AlbumList albums={albums} />
+    </div>
+  );
 };
 
 export default Pagenation;
