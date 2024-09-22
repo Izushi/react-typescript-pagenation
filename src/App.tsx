@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Album from './type';
+import Pagenation from './Pagenation';
 
 function App() {
   const [albums, setAlbums] = useState<Album[]>([]);
@@ -14,7 +15,9 @@ function App() {
     getAlbums();
   }, []);
 
-  return <div className="App" ></div>;
+  return <div className="App" >
+    <Pagenation />
+  </div>;
 }
 
 export default App
