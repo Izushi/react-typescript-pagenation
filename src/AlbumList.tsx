@@ -8,10 +8,10 @@ type Props = {
 const AlbumList = (props: Props) => {
   const { albums } = props;
   return (
-    <div>
+    <div className="albumGridWrapper">
       {albums.map((album) => (
-        <div>
-          <img src={album.url} alt="" />
+        <div key={album.id}>
+          <img src={album.url} alt="album" />
         </div>
       ))}
     </div>

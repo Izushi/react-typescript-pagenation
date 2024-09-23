@@ -9,7 +9,7 @@ type Props = {
 const Pagenation = (props: Props) => {
   const { albums } = props;
   return (
-    <div>
+    <div className="albumWrapper">
       <AlbumList albums={albums} />
     </div>
   );
