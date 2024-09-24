@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Album from './type';
-import Pagenation from './Pagenation';
+import Pagination from './Pagination';
 
 function App() {
   const [albums, setAlbums] = useState<Album[]>([]);
@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   return <div className="App" >
-    <Pagenation albums={albums} />
+    <Pagination albums={albums} />
   </div>;
 }
 

@@ -1,4 +1,3 @@
-import React from "react";
 import "./AlbumList.css";
 
 type Props = {
